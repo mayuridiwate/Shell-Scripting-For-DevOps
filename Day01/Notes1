@@ -1,0 +1,70 @@
+Shell Scripting Setup Steps are as Follows :
+1. First setup EC2 AWS instance name:linux-server, AMI:Ubuntu, Instance Type: T2 or T3micro, Security Group:allow SSh port(22)
+   Cretae KeyPair: eg. server.pem
+
+2. launch Instance
+
+3. Now connect instance First open Gitbash in your laptop, and open that folder where your pem file is located eg. it is download folder so you have to write command in gitbash like
+    cd Download then 
+type ls check server.pem is downloaded. Then go to SSh block eg. copy {chmod 400 "server.pem"} This command without curly bracket and paste it into git bash
+
+4. Then Copy Example command: ssh -i "server.pem" ubuntu@ec2-3-109-152-9.ap-south-1.compute.amazonaws.com 
+
+5. now you can succesfully login in ubuntu using ssh
+
+For write shell script we have these 4 things
+1. Bash
+2. Linux sysytem 
+3. SSh connection
+4. Text Editor like (Vim, Vi)
+5. Execution
+  
+How to write shell script : (Example)
+#!/bin/bash
+echo "Teacher: Hello Student"
+echo "Student: Hello Mam"
+echo "Today we learn Shell Script"
+echo "Ok MAm!!"
+
+How to Exexcute Shell Script :
+If your filee name is hello.sh
+then for exceuting you have to run this command 
+./hello.sh
+
+Now i am creating & Executing One shell script End-to-End
+mkdir Demo
+ls 
+Demo
+cd Demo
+Demo: vim hello.sh
+In text editor vim we have to write shell script like:
+click on I button open Insert mode
+write script:
+#!/bin/bash
+echo "Teacher: Hello Student"
+echo "Student: Hello Mam"
+echo "Today we learn Shell Script"
+echo "Ok MAm!!"
+click on escape button
+type-  :wq and enter
+
+Now we have to check permission so type
+ls -l hello.sh
+so you get -rw-rw-r-- like wise so, you have to do execute permission
+
+Type chmod 764 hello.sh {You give any of permission but execute permission is mandatory}
+then again check ls-l hello.sh
+so you get -rwxrw-r-- this permission
+
+Now you can execute you shell script like:
+./hello.sh 
+
+so you will get 
+Teacher: Hello Student
+Student: Hello Mam
+Teacher: Today we learn Shell Script
+Student: Ok MAm!!
+
+
+
+
