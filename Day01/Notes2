@@ -13,3 +13,21 @@ else
 fi
 
 ------------------------------------------------
+
+2. Check Number is Positive, Nagative, or Zero
+
+#!/bin/bash
+
+echo "Enter a Number: "
+read num
+
+if [ $num -gt 0 ]
+then 
+    echo "Nmber is Positive"
+elif [ $num -lt 0 ]
+then 
+    echo "Number is Negative"
+else 
+    echo "Zero"
+fi 
+
