@@ -1,0 +1,15 @@
+1. Example for if else (Even, Odd numbers)
+How to write a script for Even odd number
+
+#!/bin/bash
+echo "Enter a Number: "
+read num
+
+if (( num % 2 == 0 ))
+then 
+     echo "Number is Even"
+else 
+     echo "number is Odd"
+fi
+
+------------------------------------------------
