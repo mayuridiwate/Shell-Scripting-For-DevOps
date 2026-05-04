@@ -50,4 +50,57 @@ Enter a Second Number:
 sum is 50
 
 ---------------------------------------------------
+4.write a script for Substraction of 2 numbers:
+
+#!/bin/bash
+
+echo "Enter a First Number: "
+read a
+echo "Enter a Second Number: "
+read b
+total=((a-b))
+echo "Substraction is $total"
+
+o/p eg- Enetr a First Number:
+        56
+        Enetr a Second Number:
+        28
+        Substraction is 28
+
+--------------------------------------------------
+5. Write a script for Multiply of 2 numbers:
+
+#!/bin/bash
+
+echo "Enter a First Number: "
+read a
+echo "Enter a Second Number: "
+read b
+total=((a*b))
+echo "Multiply is $total"
+
+o/p eg- Enter a First Number:
+        45
+        Enter a Second Number:
+        12
+        Multiply is 540
+
+---------------------------------------------------
+6. write a script for Divide of 2 numbers:
+
+#!/bin/bash
+
+echo "Enter a First Number: "
+read a
+echo "Enter a Second Number: "
+read b
+total=((a/b))
+echo "Division is $total" 
+
+o/p eg- Enetr a First Number:
+        45
+        Enter a Second Number:
+        5
+        Division is 9
+------------------------------------------------
 
