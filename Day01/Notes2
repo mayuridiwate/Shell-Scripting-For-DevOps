@@ -31,3 +31,23 @@ else
     echo "Zero"
 fi 
 
+------------------------------------------------
+3. Write script for Adding 2 numbers:
+
+#!/bin/bash
+echo "Enter a First Number: "
+read a
+echo "Enter a Second Number: "
+read b
+sum=$((a+b))
+echo "Sum is $sum"
+
+O/p:
+Enter a First Number:
+20
+Enter a Second Number:
+30
+sum is 50
+
+---------------------------------------------------
+
